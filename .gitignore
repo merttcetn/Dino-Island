@@ -1,0 +1,17 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+.env
+__pycache__/
+*.py[cod]
+references/original/
+references/screenshots/
+research/raw/
+.tools/
+public/original/
+public/assets/
+# Keep working notes local; publish only the root README.
+*.md
+!/README.md

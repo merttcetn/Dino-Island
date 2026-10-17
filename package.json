@@ -1,0 +1,32 @@
+{
+  "name": "dino-island",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": "^22.19.0 || ^24.11.0 || >=26.0.0" },
+  "overrides": { "smol-toml": "1.9.1" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --experimental-transform-types --test tests/*.test.ts",
+    "assets:prepare": "python3 scripts/prepare-assets.py",
+    "test:browser": "playwright test",
+    "test:browser:offline": "node scripts/browser-qa-offline.mjs",
+    "rea": "rea",
+    "rea:doctor": "node scripts/rea.mjs doctor",
+    "rea:inspect": "node scripts/rea.mjs inspect",
+    "rea:analyze": "node scripts/rea.mjs analyze",
+    "rea:search": "node scripts/rea.mjs search"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/three": "0.186.0",
+    "rea-agents": "4.1.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}
